@@ -10,7 +10,7 @@
 - 右侧编辑区内已拖拽的小组件可以在内部继续拖拽进行排序
 
 ### 技术栈  
-react、react-dom、mobx、mobx-react、react-dnd
+react、react-dom、 createContext、 useReducer、react-dnd
 
 ### 实现逻辑
 #### 数据结构设计
@@ -85,8 +85,5 @@ yarn start
 ```
 打开浏览器，访问：[http://localhost:3000/](http://localhost:3000/)
 
-### 本文demo展示地址  
-[react-dnd-nested](https://silence717.github.io/react-dnd-nested/)
-如果对你有帮助的话，欢迎star✨
 
 # react-dnd-Hook
