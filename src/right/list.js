@@ -6,11 +6,15 @@ class List extends Component {
 	render() {
 		const { parentId, items, dispatch } = this.props;
 		/* items即 data数据
-		  {
-			id: 1,
-			type: 'View',
+		[
+			{
+			id: 0,
+			type: 'box',
 			childrens: []
-		} */
+			}
+		]  
+		*/
+		// console.log(items);
 		return (
 			<>
 				{items && items.length

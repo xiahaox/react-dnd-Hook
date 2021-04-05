@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { observable, makeObservable, action } from 'mobx';
+// import { observable, makeObservable, action } from 'mobx';
 import Left from './left';
 import Right from './right';
 

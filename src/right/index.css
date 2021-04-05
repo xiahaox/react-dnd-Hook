@@ -1,0 +1,10 @@
+.bbb{
+    /* background-color: aqua; */
+}
+.bbb:hover{
+    background-color: blueviolet;
+}
+
+.hoverBg{
+       background-color: blueviolet;
+}

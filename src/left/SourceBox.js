@@ -15,14 +15,16 @@ const source = {
     },
 
     endDrag(props, monitor) {
-        const item = monitor.getItem();
+        const item = monitor.getItem();   //beginDrag return 值
         const result = monitor.getDropResult();  //drop return 值
         // 确定组件已经放置到右侧区域，有结果返回的时候，调用新增组件的方法
+
+        if (result.id == undefined) return false
         if (monitor.didDrop() && result) {
             // props.onEndDrag(result.id, item.type);
             props.dispatch({
                 type: 'additem',
-                payload: { targetId: result.id, type: item.type }
+                payload: { targetId: result.id, type: item.type, over_ParentId: result.overParentId, targetType: result.targetType }
             });
         }
     }
@@ -35,9 +37,12 @@ function collect(connect, monitor) {
     };
 }
 
+
 function SourceBox(props) {
     const { connectDragSource, isDragging, children, name } = props;
     const classes = isDragging ? 'active' : '';
+
+
 
     return connectDragSource(
         <div className={classes} name={name}>

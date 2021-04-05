@@ -4,7 +4,7 @@ import SourceBox from './SourceBox';
 import { Context } from '../reducer'
 const { MenuItem } = Menu;
 
-const types = ['View', 'Text', 'Button', 'Icon'];
+const types = ['View', 'Text', 'Button', 'Button3'];
 
 export default function Left() {
     const { dispatch, state } = useContext(Context);

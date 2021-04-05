@@ -38,14 +38,14 @@ class Text extends Component {
 
 class Button1 extends Component {
 	render() {
-		return <Button style={{ "display": "block" }} type="primary" className={this.props.className}>组件二</Button>
+		return <Button style={{ "display": "block", 'margin': '3px 0' }} type="primary" className={this.props.className}>组件二</Button>
 	}
 }
 
-class Icon1 extends Component {
+class Button3 extends Component {
 	render() {
-		return <Icon type="calendar" style={{ fontSize: '16px', color: '#09a8e6' }} className={this.props.className} />
+		return <Button type="danger" style={{ 'background': 'orange' }} >组件三</Button>;
 	}
 }
 
-export default { View, Text, Button: Button1, Icon: Icon1, Box }
+export default { View, Text, Button: Button1, Button3: Button3, Box }
